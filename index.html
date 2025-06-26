@@ -1,97 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FTP-Farm Startseite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FTP – Willkommen</title>
   <style>
-    html, body {
+    body, html {
       margin: 0;
       padding: 0;
       height: 100%;
       font-family: Arial, sans-serif;
-      background: url('f99ddbe8-0602-4f68-a106-659af569825e.png') no-repeat center center fixed;
+      overflow: hidden;
+    }
+
+    .background {
+      background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
-      overflow-x: hidden;
-    }
-
-    header, footer {
+      height: 100%;
+      width: 100%;
       position: fixed;
-      left: 0;
-      right: 0;
-      z-index: 10;
-      text-align: center;
-      color: white;
-    }
-
-    header {
       top: 0;
-      padding: 2rem 1rem 1rem;
-      background: linear-gradient(to bottom, rgba(34,139,34,0.95), rgba(34,139,34,0.85), rgba(34,139,34,0));
-      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      left: 0;
+      z-index: -1;
     }
 
-    footer {
-      bottom: 0;
+    .header, .footer {
+      text-align: center;
       padding: 1rem;
-      background: linear-gradient(to top, rgba(34,139,34,0.95), rgba(34,139,34,0.85), rgba(34,139,34,0));
-      box-shadow: 0 -8px 20px rgba(0,0,0,0.4);
+      background: linear-gradient(to bottom, rgba(0,128,0,0.85), rgba(0,128,0,0));
+      color: white;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
     }
 
-    nav {
+    .footer {
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0,128,0,0.85), rgba(0,128,0,0));
+    }
+
+    .header {
+      top: 0;
+    }
+
+    .header h1 {
+      margin: 0.5rem 0;
+      font-size: 2rem;
+    }
+
+    .nav-buttons {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 1rem;
       margin-top: 1rem;
     }
 
-    nav a {
-      background-color: white;
-      color: #228B22;
-      padding: 0.6rem 1.4rem;
-      border-radius: 2rem;
+    .nav-buttons a {
+      background: white;
+      color: green;
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       transition: all 0.3s ease;
     }
 
-    nav a:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    .nav-buttons a:hover {
+      background: #f0fff0;
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
     }
 
-    main {
-      max-width: 900px;
-      margin: 10rem auto 5rem;
-      background-color: rgba(255, 255, 255, 0.85);
+    .content {
+      position: relative;
+      top: 180px;
+      bottom: 80px;
+      overflow-y: auto;
+      height: calc(100% - 260px);
       padding: 2rem;
-      border-radius: 1rem;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
       text-align: center;
     }
   </style>
 </head>
 <body>
-  <header>
+  <div class="background"></div>
+  <div class="header">
     <h1>Willkommen auf unserer Farm</h1>
-    <nav>
+    <div class="nav-buttons">
       <a href="index.html">Startseite</a>
       <a href="ueber-uns.html">Über uns</a>
       <a href="spenden.html">Spenden</a>
       <a href="galerie.html">Galerie</a>
       <a href="faq.html">FAQ</a>
       <a href="impressum.html">Impressum</a>
-    </nav>
-  </header>
-
-  <main>
-    <p>Dies ist die überarbeitete Startseite von FTP – Farina’s Transformative Farm Project.</p>
-  </main>
-
-  <footer>
+    </div>
+  </div>
+  <div class="content">
+    <h2>Dies ist die überarbeitete Startseite von FTP – Farina’s Transformative Farm Project.</h2>
+  </div>
+  <div class="footer">
     © 2025 FTP – Farina’s Transformative Farm Project. Alle Rechte vorbehalten.
-  </footer>
+  </div>
 </body>
 </html>
