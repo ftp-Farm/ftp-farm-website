@@ -1,29 +1,90 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Galerie – FTP Farm</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { font-family: sans-serif; margin: 0; padding: 1em; background: #f8f8f8; }
-        h1, h2 { text-align: center; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1em; }
-        .gallery img { width: 100%; height: auto; border-radius: 10px; }
-        .lang-switch { text-align: center; margin-bottom: 1em; }
-        .lang-switch a { margin: 0 10px; text-decoration: none; font-weight: bold; }
-        .caption { text-align: center; font-size: 0.9em; margin-top: 0.2em; }
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+        .shadow-top, .shadow-bottom {
+            height: 30px;
+            background: radial-gradient(ellipse at center, rgba(200,200,200,0.3) 0%, rgba(255,255,255,0) 80%);
+        }
+        header {
+            background-color: #228B22;
+            color: white;
+            padding: 20px 0 10px 0;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        nav {
+            text-align: center;
+            margin: 15px 0;
+        }
+        nav a {
+            background: white;
+            border-radius: 25px;
+            border: 2px solid #228B22;
+            color: #228B22;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 8px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background: #228B22;
+            color: white;
+        }
+        main {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        footer {
+            background-color: #228B22;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px 0;
+        }
     </style>
 </head>
 <body>
-    <div class="lang-switch">
-        <a href="galerie.html">Deutsch</a> | <a href="gallery.html">English</a>
-    </div>
-    <h1>📸 Galerie – Unsere Farm in Bildern</h1>
-    <div class="gallery">
-        <div><img src="https://source.unsplash.com/400x300/?farm" alt="Musterbild 1"><div class="caption">Musterbild 1</div></div>
-        <div><img src="https://source.unsplash.com/400x300/?goat" alt="Musterbild 2"><div class="caption">Musterbild 2</div></div>
-        <div><img src="https://source.unsplash.com/400x300/?chicken" alt="Musterbild 3"><div class="caption">Musterbild 3</div></div>
-        <div><img src="https://source.unsplash.com/400x300/?agriculture" alt="Musterbild 4"><div class="caption">Musterbild 4</div></div>
-    </div>
+
+<div class="shadow-top"></div>
+
+<header>
+    Galerie
+</header>
+
+<nav>
+    <a href="index.html">Startseite</a>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="spenden.html">Spenden</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="faq.html">FAQ</a>
+    <a href="impressum.html">Impressum</a>
+</nav>
+
+<div class="shadow-bottom"></div>
+
+<main>
+    <p>Dies ist die Seite „Galerie“ von FTP – Farina’s Transformative Farm Project.</p>
+</main>
+
+<div class="shadow-top"></div>
+
+<footer>
+    © 2025 FTP – Farina’s Transformative Farm Project. Alle Rechte vorbehalten.
+</footer>
+
+<div class="shadow-bottom"></div>
+
 </body>
 </html>
