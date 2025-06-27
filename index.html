@@ -4,42 +4,75 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FTP – Farina’s Farmprojekt</title>
+    <title>FTP – Farina’s Transformative Farm Project</title>
     <style>
         body {
             margin: 0;
-            font-family: sans-serif;
-            background: #eaeaea;
+            font-family: Arial, sans-serif;
+            background-image: url('hintergrund.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
         }
         header {
+            background-color: rgba(0, 128, 0, 0.9);
             display: flex;
             align-items: center;
-            background-color: #4CAF50;
-            padding: 10px 20px;
+            padding: 10px;
         }
         header img {
-            height: 60px;
-            margin-right: 20px;
+            height: 80px;
+            margin-right: 15px;
         }
-        header h1 {
+        nav {
+            flex-grow: 1;
+        }
+        nav a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 20px;
             color: white;
-            font-size: 24px;
+            text-decoration: none;
+            font-weight: bold;
         }
-        .hero {
+        .welcome {
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            margin-top: 100px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: rgba(0, 128, 0, 0.9);
+            color: white;
             text-align: center;
-            color: #333;
-            font-size: 32px;
-            margin-top: 10%;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="bilder/ftp_logo.png" alt="FTP Logo">
-        <h1>FTP – Farina’s Transformative Farm Project</h1>
+        <img src="ftp_logo.png" alt="FTP Logo" />
+        <nav>
+            <a href="#">Startseite</a>
+            <a href="#">Über uns</a>
+            <a href="#">Spenden</a>
+            <a href="#">Galerie</a>
+            <a href="#">FAQ</a>
+            <a href="#">Impressum</a>
+        </nav>
     </header>
-    <div class="hero">
-        Herzlich willkommen auf unserer transformativen Farmseite
+    <div class="welcome">
+        <h1>Herzlich willkommen auf unserer transformativen Farmseite</h1>
     </div>
+    <footer>
+        © 2025 FTP – Farina’s Farmprojekt · Alle Rechte vorbehalten
+    </footer>
 </body>
 </html>
