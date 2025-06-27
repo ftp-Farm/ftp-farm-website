@@ -2,74 +2,72 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>FTP – Farina’s Transformative Farm Project</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-image: url('hintergrund.jpg');
+            background-image: url('farm_background.jpg');
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: white;
             text-align: center;
         }
         header {
-            background-color: rgba(0, 128, 0, 0.9);
+            background-color: rgba(0,128,0,0.85);
+            padding: 15px;
             display: flex;
             align-items: center;
-            padding: 10px;
         }
         header img {
-            height: 80px;
+            height: 50px;
             margin-right: 15px;
-        }
-        nav {
-            flex-grow: 1;
         }
         nav a {
             margin: 0 10px;
-            padding: 10px 20px;
-            border: 2px solid white;
-            border-radius: 20px;
-            color: white;
+            padding: 10px 15px;
+            background: white;
+            color: green;
             text-decoration: none;
+            border-radius: 20px;
             font-weight: bold;
         }
-        .welcome {
-            background-color: rgba(0, 0, 0, 0.5);
-            display: inline-block;
-            margin-top: 100px;
+        .center-box {
+            background: rgba(0, 0, 0, 0.5);
+            margin: 100px auto;
             padding: 30px;
-            border-radius: 10px;
+            width: 80%;
+            font-size: 28px;
+            font-weight: bold;
+            border-radius: 12px;
         }
         footer {
-            background-color: rgba(0, 128, 0, 0.9);
-            color: white;
-            text-align: center;
+            background-color: rgba(0,128,0,0.9);
             padding: 10px;
-            position: absolute;
+            position: fixed;
             bottom: 0;
             width: 100%;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="ftp_logo.png" alt="FTP Logo" />
-        <nav>
-            <a href="#">Startseite</a>
-            <a href="#">Über uns</a>
-            <a href="#">Spenden</a>
-            <a href="#">Galerie</a>
-            <a href="#">FAQ</a>
-            <a href="#">Impressum</a>
-        </nav>
+        <img src="ftp_logo.png" alt="FTP Logo">
+        <span style="font-size: 22px;">FTP – Farina’s Transformative Farm Project</span>
     </header>
-    <div class="welcome">
-        <h1>Herzlich willkommen auf unserer transformativen Farmseite</h1>
+    <nav>
+        <a href="#">Startseite</a>
+        <a href="#">Über uns</a>
+        <a href="#">Spenden</a>
+        <a href="#">Galerie</a>
+        <a href="#">FAQ</a>
+        <a href="#">Impressum</a>
+    </nav>
+    <div class="center-box">
+        Herzlich willkommen auf unserer transformativen Farmseite
     </div>
     <footer>
         © 2025 FTP – Farina’s Farmprojekt · Alle Rechte vorbehalten
