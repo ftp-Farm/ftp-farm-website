@@ -2,87 +2,96 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FTP – Farina’s Transformative Farm Project</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-        }
-        header img {
-            height: 50px;
-            margin-right: 20px;
-        }
-        nav {
-            display: flex;
-            gap: 15px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            background-color: #4CAF50;
-            padding: 8px 14px;
-            border: 2px solid white;
-            border-radius: 30px;
-        }
-        .hero {
-            position: relative;
-            text-align: center;
-        }
-        .hero img {
-            width: 100%;
-            max-height: 95vh;
-            object-fit: contain;
-            display: block;
-        }
-        .hero-text {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            padding: 15px 25px;
-            font-size: 1.5rem;
-            border-radius: 10px;
-        }
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FTP-Farm Startseite</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: url('f99ddbe8-0602-4f68-a106-659af569825e.png') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+    }
+
+    header, footer {
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      text-align: center;
+      color: white;
+    }
+
+    header {
+      top: 0;
+      padding: 2rem 1rem 1rem;
+      background: linear-gradient(to bottom, rgba(34,139,34,0.95), rgba(34,139,34,0.85), rgba(34,139,34,0));
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    footer {
+      bottom: 0;
+      padding: 1rem;
+      background: linear-gradient(to top, rgba(34,139,34,0.95), rgba(34,139,34,0.85), rgba(34,139,34,0));
+      box-shadow: 0 -8px 20px rgba(0,0,0,0.4);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      background-color: white;
+      color: #228B22;
+      padding: 0.6rem 1.4rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 10rem auto 5rem;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 2rem;
+      border-radius: 1rem;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="UNSER Aktuelles LOGO.png" alt="FTP Logo">
-        <h1>FTP – Farina’s Transformative Farm Project</h1>
-        <nav>
-            <a href="#">Startseite</a>
-            <a href="#">Über uns</a>
-            <a href="#">Spenden</a>
-            <a href="#">Galerie</a>
-            <a href="#">FAQ</a>
-            <a href="#">Impressum</a>
-        </nav>
-    </header>
-    <div class="hero">
-        <img src="f99ddbe8-0602-4f68-a106-659af569825e.png" alt="Bauer auf dem Feld">
-        <div class="hero-text">Herzlich willkommen auf unserer transformativen Farmseite</div>
-    </div>
-    <footer>
-        © 2025 FTP – Farina’s Farmprojekt · Alle Rechte vorbehalten
-    </footer>
+  <header>
+    <h1>Willkommen auf unserer Farm</h1>
+    <nav>
+      <a href="index.html">Startseite</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="spenden.html">Spenden</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="faq.html">FAQ</a>
+      <a href="impressum.html">Impressum</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Dies ist die überarbeitete Startseite von FTP – Farina’s Transformative Farm Project.</p>
+  </main>
+
+  <footer>
+    © 2025 FTP – Farina’s Transformative Farm Project. Alle Rechte vorbehalten.
+  </footer>
 </body>
 </html>
